@@ -1,24 +1,31 @@
 <template>
-    <div>
-      <Block v-if="aaa"/>
-      <button v-on:click="aaa=true">Add new Block</button>
-
-    </div>
+  <div>
+    <Block v-for="item in items"/>
+    <button v-on:click="CreateBlock">Add new Block</button>
+  </div>
 </template>
 
 <script>
-import Block from './Block.vue'
+import Block from "./Block.vue";
+import { METHODS } from "http";
 export default {
-    components:{
-        Block
+  components: {
+    Block
+  },
+
+  data() {
+    return {
+      items: []
+    };
+  },
+  methods: {
+    CreateBlock: function() {
+      this.items.push({
+        Data: "",
+        previousHash: "",
+        hash: ""
+      });
     }
-
-,data(){
-return{
-    aaa:false
-}
-
-
-}
-}
+  }
+};
 </script>

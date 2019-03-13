@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Blockchain from './Blockchain.vue'
 import BootstrapVue from 'bootstrap-vue'
-//import {Ethers} from 'ethers'
 
 Vue.use(BootstrapVue)
 //Vue.use(Ethers)

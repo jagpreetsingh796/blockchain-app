@@ -3,9 +3,10 @@
        <b-card class="mb-2" style="margin:auto">
             <b-form-group />
            
-                  Data
+                 
            <b-form-input label="Data"  v-model="Data" type="text"  >
-               </b-form-input>
+             
+             </b-form-input>
            <p>{{Data}}</p>
            
              PreviousHash
@@ -37,7 +38,7 @@ console.log(ethers.utils.keccak256("0x7484378"))
 export default {
     data(){
         return{
-        Data:"",
+        Data:"Wassup",
         previousHash:"",
         hash:""
         }
